@@ -1,19 +1,68 @@
-:root{
-   --link-color:white;
+:root {
+    --link-color: white;
+    --text-font-family: var(--text-font-family)
 }
 
-
-.global-header.main-navigatior{
-color: red;
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.global-header{
-background-color: rgb(3, 3, 3);
+.button {
+    font-weight: 600px;
+    font-size: 12px;
+    line-height: 16px;
 }
-a,a:visited{
+
+ul {
+
+    list-style-type: none;
+}
+
+.global-header.main-navigatior {
+    color: red;
+}
+
+.global-header {
+    background-color: #333
+}
+
+a,
+a:visited {
     color: #ffffff;
 }
 
-.global-header.main-navigatior a,a:visited{
+.global-header.main-navigatior a,
+a:visited {
     color: #ffffff;
+}
+
+.social-links {
+    color: #303030;
+    font-size: 11px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
+}
+
+.hero-header {
+    color: #000000;
+    font-size: 72px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.6px;
+}
+
+.hero-section{
+    
 }

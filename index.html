@@ -65,8 +65,8 @@
 
         <!-- Sectiunea pentru link-uri spre Youtube/Facebook -->
         <section>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer nofollow">Youtube</a>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer nofollow">Facebook</a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer nofollow" class="social-links">Youtube</a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer nofollow" class="social-links">Facebook</a>
             <img src="images/dash_navigation-links.png" />
         </section>
     </header>
@@ -81,7 +81,7 @@
         <!-- se pare ca avem mai multe sectiuni in design, asadar le vom separa in functie de continutul lor -->
 
         <!-- sectiunea 'Hero' a site-ului nostru, cea care capteaza atentia utilizatorului la prima vedere (above the fold) -->
-        <section>
+        <section class="hero-section">
             <hr />
             <span>A hair salon for men in Kyiv</span>
             <!--
@@ -91,7 +91,8 @@
                 - Atributele vin de obicei în perechi nume/valoare, de exemplu: **nume="valoare"**.
                 - in lectiile urmatoare vom vedea cum atributul 'class' ne ajuta sa setam stiluri pe un element
                 -->
-            <h1 title="BarberShop">BarberShop</h1>
+            <h1 class="hero-header"
+            title="BarberShop">BarberShop</h1>
             <p>
                 <!--
                     ' este un caracter care poate fi confundat de browsere,
@@ -169,7 +170,7 @@
                     <sp>from 200 UAH</sp>
                 </li>
             </ul>
-            <button>Book a service</button>
+            <button class="button">Book a service</button>
         </section>
         <section>
             <ul>
