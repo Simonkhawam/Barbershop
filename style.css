@@ -1,10 +1,9 @@
 :root {
-    --link-color: white;
-    --link-active-color: #FF6C00;
-    --heading-color:#ffffff; 
-    --text-font-family: 'open sans', 'sans-serif';
-    --heading-font-family: 'raleway', 'sans-serif';
-
+  --link-color: white;
+  --link-active-color: #ff6c00;
+  --heading-color: #ffffff;
+  --text-font-family: "open sans", "sans-serif";
+  --heading-font-family: "raleway", "sans-serif";
 }
 
 h1,
@@ -14,129 +13,113 @@ h4,
 h4,
 h5,
 h6 {
-    font-weight: bold;
-    font-family: var(--heading-font-family);
-
+  font-weight: bold;
+  font-family: var(--heading-font-family);
 }
 
 .button {
-    color: var(--link-color);
-    font-family: var(--text-font-family);
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    text-transform: uppercase;
-    background-color: transparent;
+  color: var(--link-color);
+  font-family: var(--text-font-family);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  background-color: transparent;
 }
 
 ul {
-
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .global-header {
-    background-color: #333;
+  background-color: #363636;
 }
 
-.phone-number{
-    text-decoration: none;
-    color: var(--heading-color);
-}
-
+.phone-number,
 .global-header .main-navigation a,
 .global-header .main-navigation a:visited {
-    color: var(--link-color);
-    font-size: 12px;
-    font-family: var(--text-font-family);
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    text-decoration: none;
+  color: var(--link-color);
+  font-size: 12px;
+  font-family: var(--text-font-family);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .global-header .main-navigation a.active,
 .social-links-main a.active {
-    color: var(--link-active-color);
-
+  color: var(--link-active-color);
 }
 
 .main-navigation-list__navbar:hover,
 .main-navigation-list__navbar:focus {
-
- background: var(--link-active-color);
-
+  background: var(--link-active-color);
 }
 
-
-.main-navigation__list{
-    justify-content: space-evenly;
-    text-align: left;
+.main-navigation__list {
+  justify-content: space-evenly;
+  text-align: left;
 }
-
 
 .global-header .social-links {
-    color: black;
-    font-size: 11px;
-    font-family: var(--text-font-family);
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 2.2px;
-    text-decoration: none;
+  color: black;
+  font-size: 11px;
+  font-family: var(--text-font-family);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+  text-decoration: none;
 }
 
 .social-links:hover,
 .social-links:focus,
 .social-links-insta:hover,
 .social-links-insta:focus {
-    color: var(--link-active-color);
+  color: var(--link-active-color);
 }
 
 .main-navigation__list {
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 1.36;
-    display: flex;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.36;
+  display: flex;
 }
 
-
-
 .main-navigation__list {
-    color: #303030;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    didisplay: block;
-    
-    }
+  color: #303030;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: block;
+}
 
 .social-links-insta {
-    
-    font-size: 11px;
-    font-family: var(--text-font-family);
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 2.2px;
-    text-decoration: none;
+  font-size: 11px;
+  font-family: var(--text-font-family);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+  text-decoration: none;
 }
 
 .hero-header {
-    color: #000000;
-    font-size: 72px;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 3.6px;
-    
+  color: var(--heading-color);
+  font-size: 72px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.6px;
 }
 
-.hero-section{
-    
+.hero-section {
+  background-color: #363636;
 }
