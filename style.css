@@ -1,6 +1,6 @@
 :root {
     --link-color: white;
-    --link-activ-color: #ff6c00;
+    --link-active-color: #FF6C00;
     --heading-color:#ffffff; 
     --text-font-family: 'open sans', 'sans-serif';
     --heading-font-family: 'raleway', 'sans-serif';
@@ -27,28 +27,29 @@ h6 {
     font-weight: 600;
     line-height: normal;
     letter-spacing: 1.08px;
-    background-color: transparent;
     text-transform: uppercase;
+    background-color: transparent;
 }
 
 ul {
 
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-
 
 .global-header {
     background-color: #333;
 }
 
-
 .phone-number{
     text-decoration: none;
+    color: var(--heading-color);
 }
 
-.global-header, .main-navigation a,
-.global-header, .main-navigation a:visited {
-    color:var(--link-color);
+.global-header .main-navigation a,
+.global-header .main-navigation a:visited {
+    color: var(--link-color);
     font-size: 12px;
     font-family: var(--text-font-family);
     font-style: normal;
@@ -59,20 +60,71 @@ ul {
     text-decoration: none;
 }
 
+.global-header .main-navigation a.active,
+.social-links-main a.active {
+    color: var(--link-active-color);
 
-.social-links { 
-        color: var(--link-activ-color);
-        font-family: var(--text-font-family);
-        font-size: 11px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        letter-spacing: 2.2px;
-        text-decoration: none;
+}
+
+.main-navigation-list__navbar:hover,
+.main-navigation-list__navbar:focus {
+
+ background: var(--link-active-color);
+
+}
+
+
+.main-navigation__list{
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+
+.global-header .social-links {
+    color: black;
+    font-size: 11px;
+    font-family: var(--text-font-family);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
+    text-decoration: none;
+}
+
+.social-links:hover,
+.social-links:focus,
+.social-links-insta:hover,
+.social-links-insta:focus {
+    color: var(--link-active-color);
+}
+
+.main-navigation__list {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.36;
+    display: flex;
 }
 
 
 
+.main-navigation__list {
+    color: #303030;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    didisplay: block;
+    
+    }
+
+.social-links-insta {
+    
+    font-size: 11px;
+    font-family: var(--text-font-family);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
+    text-decoration: none;
+}
 
 .hero-header {
     color: #000000;

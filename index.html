@@ -19,7 +19,7 @@
 <body>
     <!-- Header -->
     <header class="global-header">
-        <nav class="main-navigation">
+
         <!-- Link spre pagina acasa (daca este pe un server, poate fi direct pagina 'https:/www.siteulmeu.ro')-->
         <a href="index.html">
             <!--
@@ -29,54 +29,34 @@
                 -->
             <img src="images/logo.svg" alt="BarberShop" height="55.46px" />
         </a>
-       
-            <!-- Scurtatura pentru scriere rapida in editor: ul>li*4>a -->
-            <!-- De regula, pentru ca nu este importanta ordinea, la meniu se foloseste ul (Unordered List) -->
-            <ul>
-                <!-- Vom adauga valoare pentru href atunci cand avem create si restul paginilor  -->
-                <li><a href="about.html">About</a></li>
-                <li><a href="">Services and prices</a></li>
-                <li><a href="">Barbers</a></li>
-                <li><a href="">Contacts</a></li>
+        <nav class="main-navigation">
+            <ul class="main-navigation__list">
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="" class="main-navigation-list__navbar">Services and prices</a></li>
+                <li><a href="" class="main-navigation-list__navbar">Barbers</a></li>
+                <li><a href="" class="main-navigation-list__navbar">Contacts</a></li>
             </ul>
             <!-- Sectiunea nav, trebuie sa contina doar link-urile pentru navigatie -->
-            
         </nav>
         <!-- Pentru telefon, exista o metoda de a forma numarul, folosind tel:+01234 pentru asta -->
         <!-- De asemenea, pentru a trimite un email, putem folosi mailto:a.popa@goit.global -->
         <a class="phone-number" href="tel:+380441111111">+38 044 111 11 11</a>
 
-        <button class="button">book a service</button>
-       
-        <!--
-              Link-urile pot fi externe, dar e recomandat sa folosim target="_blank", pentru ca utilizatorii
-              sa nu isi piarda activitatea de pe site-ul nostru.
+        <button class="button">
+            book a service
+        </button>
 
-              rel = „noopener” pe care îl utilizați pe toate linkurile care se deschid în filele noi folosind target="_blank".
-              Există implicații de securitate dacă nu utilizați valoarea noopener pe linkurile dvs. care se deschid în
-              filele noi. Un atacator rău intenționat poate utiliza obiectul window.opener pentru a schimba conținutul și
-              locația paginii de origine.
-
-
-              rel = „noreferrer” poate avea un scop similar cu noopener, mai ales în browserele mai vechi. Prin urmare, are
-              sens să le folosim pe amândouă. În plus, noreferrerul poate afecta analiza și poate raporta traficul ca direct
-              în loc de referrer.
-
-
-              rel = „nofollow” va informa motoarele de căutare să nu treacă link-ul către pagina legată și nu va trece la
-              PageRank. Puteți să o considerați ca pe o valoare care este utilizată atunci când doriți să vă conectați la o
-              altă pagină, dar fără a o „aproba”. Este singura valoare rel din această listă cu un efect tangibil asupra
-              eforturilor SEO.
-            -->
-       
-
-        <!-- Sectiunea pentru link-uri spre Youtube/Facebook -->
+        <!-- Sectiunea pentru link-uri spre Youtube/instagram -->
         <section>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer nofollow"
-                class="social-links active">instagram</a>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer nofollow"
-                class="social-links">youtube</a>
-            <img src="images/dash_navigation-links.png" />
+            <ul>
+                <li class="social-links-main">
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer nofollow"
+                        class="social-links-insta active">instagram</a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer nofollow"
+                        class="social-links">youtube</a>
+                    <img src="images/dash_navigation-links.png" />
+                </li>
+            </ul>
         </section>
     </header>
     <!--
@@ -102,7 +82,7 @@
                 -->
             <h1 class="hero-header" title="BarberShop">BarberShop</h1>
             <p>
-                <!--
+                <!--3
                     ' este un caracter care poate fi confundat de browsere,
                     de aceea se recomanda a fi inlocuit cu varianta html entities, in cazul nostru: &apos;
                     https://www.w3schools.com/html/html_entities.asp
@@ -213,14 +193,29 @@
         </section>
     </main>
     <section>
+
         <h3>for true connoisseurs of the atmosphere</h3>
         <h2>Our Barbers</h2>
-        <img src="images/img1.jpg" alt="John smith">
-        <br>
-        <span>John Smith</span>
-
-        <em>Extreme Barber</em>
-
+        <ul>
+            <li>
+                <img src="images/img1.jpg" alt="John smith">
+                <br>
+                <span>John Smith</span>
+                <em>Extreme Barber</em>
+            </li>
+            <li>
+                <img src="images/img2.jpg" alt="Michele Doe">
+                <br>
+                <span>Michele Doe</span>
+                <em>Extreme Barber</em>
+            </li>
+            <li>
+                <img src="images/img3.jpg" alt="Alan Black">
+                <br>
+                <span>Alan Black</span>
+                <em>Extreme Barber</em>
+            </li>
+        </ul>
 
 
     </section>
@@ -228,7 +223,10 @@
     <section>
         <h3>In Latin, "barba" means "beard"</h3>
         <ul>
-            <li><img src="images/motocutting.jpg" alt=""></li>
+            <li><img src="images/Rectangle 25.jpg" alt=""></li>
+            <li><img src="images/Rectangle 26.jpg" alt=""></li>
+            <li><img src="images/Rectangle 27.jpg" alt=""></li>
+            <li><img src="images/Rectangle 28.jpg" alt=""></li>
         </ul>
     </section>
     <section>
