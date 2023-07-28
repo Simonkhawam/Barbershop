@@ -178,3 +178,10 @@ img.dash {
 .about-section.section-description {
   width: 600px;
 }
+.section-dark {
+  background-color: #363636;
+}
+.prices {
+  display: flex;
+  margin-top: 46px;
+}
