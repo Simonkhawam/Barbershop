@@ -1,5 +1,5 @@
 :root {
-  --link-color: white;
+  --link-color: #ffffff;
   --link-active-color: #ff6c00;
   --heading-color: #ffffff;
   --text-font-family: "open sans", "sans-serif";
@@ -17,6 +17,10 @@ h6 {
   font-family: var(--heading-font-family);
 }
 
+ul {
+  list-style-type: none;
+}
+
 .button {
   color: var(--link-color);
   font-family: var(--text-font-family);
@@ -29,14 +33,9 @@ h6 {
   background-color: transparent;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .global-header {
   background-color: #363636;
+  padding: 40px 50px 40px 100px;
 }
 
 .phone-number,
@@ -58,14 +57,28 @@ ul {
   color: var(--link-active-color);
 }
 
-.main-navigation-list__navbar:hover,
-.main-navigation-list__navbar:focus {
-  background: var(--link-active-color);
+.global-header-aside {
+  background-color: #ffffff;
 }
 
-.main-navigation__list {
-  justify-content: space-evenly;
-  text-align: left;
+.global-header .social-links {
+  color: black;
+  font-size: 11px;
+  font-family: var(--text-font-family);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+  text-decoration: none;
+}
+
+.hero-section {
+  background-color: #363636;
+}
+
+.global-header .main-navigation a.active,
+.social-links-main a.active {
+  color: var(--link-active-color);
 }
 
 .global-header .social-links {
@@ -86,20 +99,6 @@ ul {
   color: var(--link-active-color);
 }
 
-.main-navigation__list {
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 1.36;
-  display: flex;
-}
-
-.main-navigation__list {
-  color: #303030;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  display: block;
-}
-
 .social-links-insta {
   font-size: 11px;
   font-family: var(--text-font-family);
@@ -118,8 +117,4 @@ ul {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 3.6px;
-}
-
-.hero-section {
-  background-color: #363636;
 }
