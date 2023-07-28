@@ -26,56 +26,77 @@
   </head>
   <!-- Partea pe care o vedem efectiv in pagina -->
   <body>
-    <!-- Header -->
-    <header class="global-header">
-      <a href="index.html">
-        <img src="images/logo.svg" alt="BarberShop" />
-      </a>
+    <div class="container header-container">
+      <aside class="global-aside">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="BarberShop" />
+        </a>
+        <div class="global-aside-links">
+          <a
+            class="social-link"
+            href="https://youtube.com"
+            target="_blank"
+            rel="nofollow noopener no-referrer"
+            >Youtube</a
+          >
+          <a
+            class="social-link active"
+            href="https://instagram.com"
+            target="_blank"
+            rel="nofollow noopener no-referrer"
+            >instagram</a
+          >
 
-      <nav class="main-navigation">
-        <ul>
-          <li><a href="about.html" class="active">About</a></li>
-          <li>
-            <a href="services.html" class="main-navigation-list__navbar"
-              >Services and prices</a
-            >
-          </li>
-          <li>
-            <a href="/barbers.html" class="main-navigation-list__navbar"
-              >Barbers</a
-            >
-          </li>
-          <li>
-            <a href="/contact.html" class="main-navigation-list__navbar"
-              >Contacts</a
-            >
-          </li>
-        </ul>
-        <!-- Sectiunea nav, trebuie sa contina doar link-urile pentru navigatie -->
-      </nav>
-      <a class="phone-number" href="tel:+380441111111">+38 044 111 11 11</a>
-      <button class="button">BOOK A SERVICE</button>
-
-      <!-- Sectiunea pentru link-uri spre Youtube/instagram -->
-      <aside class="global-header-aside">
-        <a
-          class="social-link"
-          href="https://youtube.com"
-          target="_blank"
-          rel="nofollow noopener no-referrer"
-          >Youtube</a
-        >
-        <a
-          class="social-link active"
-          href="https://instagram.com"
-          target="_blank"
-          rel="nofollow noopener no-referrer"
-          >instagram</a
-        >
-
-        <img src="images/dash_navigation-links.png" />
+          <img src="images/dash_navigation-links.png" class="dash" />
+        </div>
       </aside>
-    </header>
+      <div class="header-container-content">
+        <header class="global-header">
+          <nav class="main-navigation">
+            <ul>
+              <li><a href="about.html" class="active">About</a></li>
+              <li>
+                <a href="services.html" class="main-navigation-list__navbar"
+                  >Services and prices</a
+                >
+              </li>
+              <li>
+                <a href="/barbers.html" class="main-navigation-list__navbar"
+                  >Barbers</a
+                >
+              </li>
+              <li>
+                <a href="/contact.html" class="main-navigation-list__navbar"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+            <!-- Sectiunea nav, trebuie sa contina doar link-urile pentru navigatie -->
+          </nav>
+          <div>
+            <a class="phone-number" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+            <button class="button">BOOK A SERVICE</button>
+          </div>
+          <!-- Sectiunea pentru link-uri spre Youtube/instagram -->
+        </header>
+        <section class="section hero-section">
+          <img src="images/Rectangle 4.png" alt="|" />
+          <h3>A hair salon for men in Kyiv</h3>
+          <h1 class="hero-header" title="BarberShop">BarberShop</h1>
+          <p>
+            We are experts in trendy men's haircuts. We work quickly, carefully,
+            and tastefully.&apos;
+          </p>
+          <div class="contol-buttons">
+            <button>prev</button>
+            <button>Next</button>
+          </div>
+        </section>
+      </div>
+      <!-- Header -->
+    </div>
     <!--
             Avantaje main vs div:
             - Mai usor de citit de developer ('no div soup')
@@ -88,45 +109,31 @@
       <!-- se pare ca avem mai multe sectiuni in design, asadar le vom separa in functie de continutul lor -->
 
       <!-- sectiunea 'Hero' a site-ului nostru, cea care capteaza atentia utilizatorului la prima vedere (above the fold) -->
-      <section class="section hero-section">
-        <img src="images/Rectangle 4.png" alt="|" />
-        <h3>A hair salon for men in Kyiv</h3>
-        <h1 class="hero-header" title="BarberShop">BarberShop</h1>
-        <p>
-          We are experts in trendy men's haircuts. We work quickly, carefully,
-          and tastefully.&apos;
-        </p>
-        <button>prev</button>
-        <button>Next</button>
-      </section>
 
       <!--About-->
-      <section class="section section-with-light-bg">
+      <section class="section-light about-section">
         <img
           src="images/barber-img-1.png"
           alt="Frizer taie cu masina de tuns"
         />
         <img src="images/barber-img-2.png" alt="Frizer taie cu lama" />
-        <img src="images/dash_about.png" width="60px" height="1px" />
-        <h3 class="section-sub-heading">About</h3>
-        <h2 class="section-heading">best Barbershop in your city</h2>
-        <h3>
-          If you want to add more confidence to your image, you should
-          definitely visit us.
-        </h3>
-        <p>
-          We are a team that never stops at what has been achieved and are
-          thirsty for changes. And when you fall into the hands of our master,
-          you will never be the same again. We are a team that is always "on the
-          same wave" with clients. Therefore, we are always ready to improve
-          everyone who comes to us!
-        </p>
-        <!--
-                - folosim un button atunci cand deschide un modal, facem o actiune in cadrul paginii noastre
-                - folosim link (a href) atunci cand deschidem o pagina / navigam spre o adresa
-                - pe scurt link -> pagina/site diferite, button - actiune in pagina
-                -->
-        <button>ONLINE-BOOKING</button>
+        <div class="section-description">
+          <img src="images/dash_about.png" width="60px" height="1px" />
+          <h3 class="section-sub-heading">About</h3>
+          <h2 class="section-heading">best Barbershop in your city</h2>
+          <h3>
+            If you want to add more confidence to your image, you should
+            definitely visit us.
+          </h3>
+          <p>
+            We are a team that never stops at what has been achieved and are
+            thirsty for changes. And when you fall into the hands of our master,
+            you will never be the same again. We are a team that is always "on
+            the same wave" with clients. Therefore, we are always ready to
+            improve everyone who comes to us!
+          </p>
+          <button>ONLINE-BOOKING</button>
+        </div>
       </section>
       <!--service and prices-->
       <section>
