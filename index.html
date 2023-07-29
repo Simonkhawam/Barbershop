@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Parte pentru browser/motoare de cautare -->
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Textul care va aparea in bara de sus a browserului-->
     <title>BarberShop</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
-  <!-- Partea pe care o vedem efectiv in pagina -->
   <body>
+    <!--Hero section-->
     <div class="container header-container">
+      <!--Logo and social links-->
       <aside class="global-aside">
         <a href="index.html">
           <img src="images/logo.svg" alt="BarberShop" />
@@ -43,173 +36,204 @@
             >instagram</a
           >
 
-          <img src="images/dash_navigation-links.png" class="dash" />
+          <img
+            class="global-aside-separator"
+            src="./images/header-section-devider.png"
+            alt="|"
+          />
         </div>
       </aside>
       <div class="header-container-content">
         <header class="global-header">
           <nav class="main-navigation">
             <ul>
-              <li><a href="about.html" class="active">About</a></li>
+              <li><a href="#about.html" class="active">About</a></li>
               <li>
-                <a href="services.html" class="main-navigation-list__navbar"
-                  >Services and prices</a
-                >
+                <a href="#services.html">Services and prices</a>
               </li>
               <li>
-                <a href="/barbers.html" class="main-navigation-list__navbar"
-                  >Barbers</a
-                >
+                <a href="#barbers.html">Barbers</a>
               </li>
               <li>
-                <a href="/contact.html" class="main-navigation-list__navbar"
-                  >Contacts</a
-                >
+                <a href="#contact.html">Contacts</a>
               </li>
             </ul>
-            <!-- Sectiunea nav, trebuie sa contina doar link-urile pentru navigatie -->
+            <div>
+              <a class="phone-number" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
+              <button class="button global-header-book-btn">
+                BOOK A SERVICE
+              </button>
+            </div>
           </nav>
-          <div>
-            <a class="phone-number" href="tel:+380441111111"
-              >+38 044 111 11 11</a
-            >
-            <button class="button">BOOK A SERVICE</button>
-          </div>
-          <!-- Sectiunea pentru link-uri spre Youtube/instagram -->
+          <!-- </div>-->
         </header>
-        <section class="section section hero-section">
-          <img src="images/Rectangle 4.png" alt="|" />
-          <h3>A hair salon for men in Kyiv</h3>
-          <h1 class="hero-header" title="BarberShop">BarberShop</h1>
-          <p>
-            We are experts in trendy men's haircuts. We work quickly, carefully,
-            and tastefully.&apos;
-          </p>
+
+        <section class="section global-header-content">
+          <div class="section-description">
+            <div class="heading-with-dash">
+              <img class="dash" src="./images/landing-dash.png" alt="-" />
+              <h3><span>A hair salon for men in Kyiv</span></h3>
+            </div>
+            <h1 class="hero-heading" title="BarberShop">BarberShop</h1>
+            <p class="hero-sub-heading">
+              We are experts in trendy men's haircuts. We work quickly,
+              carefully, and tastefully.&apos;
+            </p>
+          </div>
           <div class="contol-buttons">
             <button>prev</button>
             <button>Next</button>
           </div>
         </section>
       </div>
-      <!-- Header -->
     </div>
-    <!--
-            Avantaje main vs div:
-            - Mai usor de citit de developer ('no div soup')
-            - Site accesibil pentru persoanele cu dizabilitati (ARIA)
-            - Semantica mai buna -> SEO mai bun -> mai usor de citit de motoarele de indexare
-        -->
-
+    <!--Main Content-->
     <main>
-      <!-- continutul site-ului, ce aveam in <main></main> trebuie sa fie unic pe toate paginile noastre -->
-      <!-- se pare ca avem mai multe sectiuni in design, asadar le vom separa in functie de continutul lor -->
-
-      <!-- sectiunea 'Hero' a site-ului nostru, cea care capteaza atentia utilizatorului la prima vedere (above the fold) -->
-
       <!--About-->
-      <section class="section-light about-section">
-        <img
-          src="images/barber-img-1.png"
-          alt="Frizer taie cu masina de tuns"
-        />
-        <img src="images/barber-img-2.png" alt="Frizer taie cu lama" />
-        <div class="section-description">
-          <img src="images/dash_about.png" width="60px" height="1px" />
-          <h3 class="section-sub-heading">About</h3>
-          <h2 class="section-heading">best Barbershop in your city</h2>
-          <h3>
-            If you want to add more confidence to your image, you should
-            definitely visit us.
-          </h3>
-          <p>
-            We are a team that never stops at what has been achieved and are
-            thirsty for changes. And when you fall into the hands of our master,
-            you will never be the same again. We are a team that is always "on
-            the same wave" with clients. Therefore, we are always ready to
-            improve everyone who comes to us!
-          </p>
-          <button>ONLINE-BOOKING</button>
-        </div>
-      </section>
-      <!--service and prices-->
-      <section class="section section-dark">
-        <h3 class="section-sub-heading">
-          Spend time in the company of the best craftsmen
-        </h3>
-        <h2>Services and Prices</h2>
-        <div class="prices">
-          <ul class="services-list">
-            <li>
-              <span>Men's Haircut</span>
-              <span>from 300 UAH</span>
-            </li>
-            <li>
-              <span>Beard Trim</span>
-              <span>from 200 UAH</span>
-            </li>
-            <li>
-              <span>Mustache Trim</span>
-              <span>from 200 UAH</span>
-            </li>
-            <li>
-              <span>Straight Razor Shave</span>
-              <span>from 200 UAH</span>
-            </li>
-          </ul>
-          <ul class="services-list">
-            <li>
-              <span>Trainee Haircut</span>
-              <span>from 50 UAH</span>
-            </li>
-            <li>
-              <sp>Buzz Cut</sp>
-              <sp>from 200 UAH</sp>
-            </li>
-            <li>
-              <sp>Kids Haircut (&lsaquo;12y.o. )</sp>
-              <sp>from 300 UAH</sp>
-            </li>
-            <li>
-              <sp>Gray Coverage</sp>
-              <sp>from 200 UAH</sp>
-            </li>
-          </ul>
-        </div>
-        <button class="button">Book a service</button>
-      </section>
-      <section>
-        <ul>
-          <li>
-            <span>600</span>
-            <sup>+</sup>
-            <span>Satisfied Customers per Day</span>
-          </li>
+      <section id="about" class="section section--light about-section">
+        <div class="container">
+          <div class="section-with-tow-coloms">
+            <div class="section-images">
+              <img
+                src="images/barber-img-1.png"
+                alt="Frizer taie cu masina de tuns"
+              />
+              <img src="images/barber-img-2.png" alt="Frizer taie cu lama" />
+            </div>
 
-          <li>
-            <span>50</span>
-            <sup>+</sup>
-            <span>Excellent Service Awards</span>
-          </li>
-          <li>
-            <span>20</span>
-            <sup>+</sup>
-            <span>The Best Barbers of Kyiv</span>
-          </li>
-          <li>
-            <span>100</span>
-            <sup>+</sup>
-            <span>Gifts for Regular Customers</span>
-          </li>
-        </ul>
-        <article>
-          <h3>Old school</h3>
-          <h2>Why do they come to us?</h2>
-          <p>
-            Only good things are said about us. But it is better to see and feel
-            1 time than to read 10 times.
-          </p>
-        </article>
+            <div>
+              <div class="section-description">
+                <div class="heading-with-dash">
+                  <img src="images/dash_about.png" width="60px" height="1px" />
+                  <h3 class="section-sub-heading">About</h3>
+                </div>
+                <h2 class="section-heading">best Barbershop in your city</h2>
+                <p>
+                  If you want to add more confidence to your image, you should
+                  definitely visit us.
+                </p>
+                <p class="small-text">
+                  We are a team that never stops at what has been achieved and
+                  are thirsty for changes. And when you fall into the hands of
+                  our master, you will never be the same again. We are a team
+                  that is always "on the same wave" with clients. Therefore, we
+                  are always ready to improve everyone who comes to us!
+                </p>
+              </div>
+              <button class="button">ONLINE-BOOKING</button>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <!--service and prices-->
+      <section id="services" class="section section--dark prices-secion">
+        <div class="continer">
+          <div class="section-description">
+            <div class="heading-with-dash">
+              <img class="dash" src="./images/dash-light.png" alt="-" />
+              <h3 class="section-sub-heading">
+                Spend time in the company of the best craftsmen
+              </h3>
+            </div>
+            <h2 class="section-heading">Services and Prices</h2>
+          </div>
+          <div class="prices">
+            <ul class="prices-list">
+              <li>
+                <span>Men's Haircut</span>
+                <span class="prices-dash">from 300 UAH</span>
+              </li>
+              <li>
+                <span>Beard Trim</span>
+                <span class="prices-dash">from 200 UAH</span>
+              </li>
+              <li>
+                <span>Mustache Trim</span>
+                <span class="prices-dash">from 200 UAH</span>
+              </li>
+              <li>
+                <span>Straight Razor Shave</span>
+                <span class="prices-dash">from 200 UAH</span>
+              </li>
+            </ul>
+            <ul class="services-list">
+              <li>
+                <span>Trainee Haircut</span>
+                <span class="prices-dash">from 50 UAH</span>
+              </li>
+              <li>
+                <span>Buzz Cut</span>
+                <span class="prices-dash">from 200 UAH</span>
+              </li>
+              <li>
+                <span>Kids Haircut (&lsaquo;12y.o. )</span>
+                <span class="prices-dash">from 300 UAH</span>
+              </li>
+              <li>
+                <span>Gray Coverage</span>
+                <span class="prices-dash">from 200 UAH</span>
+              </li>
+            </ul>
+          </div>
+          <div class="centered-content">
+            <button class="button">Book a service</button>
+          </div>
+        </div>
+      </section>
+      <!--Old school-->
+      <section class="section section--light why-us-section">
+        <div class="container">
+          <div class="section-with-two-columns">
+            <div>
+              <div class="why-us-list">
+                <div class="feature">
+                  <h3 class="feature-title">600<sup>+</sup></h3>
+                  <div class="feature-description">
+                    Satisfied Customers per Day
+                  </div>
+                </div>
+                <div class="feature">
+                  <h3 class="feature-title">50</h3>
+                  <sup>+</sup>
+                  <div class="feature-description">
+                    Excellent Service Awards
+                  </div>
+                </div>
+                <div class="feature">
+                  <h3 class="feature-title">20</h3>
+                  <sup>+</sup>
+                  <div class="feature-description">
+                    The Best Barbers of Kyiv
+                  </div>
+                </div>
+                <div class="feature">
+                  <h3 class="feature-title">100</h3>
+                  <sup>+</sup>
+                  <div class="feature-description">
+                    Gifts for Regular Customers
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <article>
+            <div class="heading-with-dash">
+              <img class="dash" src="./images/dash-dark.png" alt="-" />
+              <h3 class="section-sub-heading">Old school</h3>
+            </div>
+            <h2 class="section-heading">Why do they come to us?</h2>
+            <p>
+              Only good things are said about us. But it is better to see and
+              feel 1 time than to read 10 times.
+            </p>
+          </article>
+        </div>
+     </div>
+    </section>
     </main>
     <section>
       <h3>for true connoisseurs of the atmosphere</h3>
@@ -235,7 +259,7 @@
         </li>
       </ul>
     </section>
-
+    <!--Motto-->
     <section>
       <h3>In Latin, "barba" means "beard"</h3>
       <ul>
