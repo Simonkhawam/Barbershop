@@ -129,7 +129,7 @@
       </section>
 
       <!--service and prices-->
-      <section id="services" class="section section--dark prices-secion">
+      <section id="services" class="section section--dark prices-section">
         <div class="continer">
           <div class="section-description">
             <div class="heading-with-dash">
@@ -259,29 +259,103 @@
         </ul>
       </section>
       <!--Motto-->
-      <section>
-        <h3>In Latin, "barba" means "beard"</h3>
-        <ul>
-          <li><img src="images/Rectangle 25.jpg" alt="" /></li>
-          <li><img src="images/Rectangle 26.jpg" alt="" /></li>
-          <li><img src="images/Rectangle 27.jpg" alt="" /></li>
-          <li><img src="images/Rectangle 28.jpg" alt="" /></li>
+      <section class="section section--light">
+        <div class="container">
+          <img src="./images/dash-dark.png" class="dash" alt="-" />
+          <h3>In Latin, "barba" means "beard"</h3>
+        </div>
+        <ul class="motto-cards">
+          <li>
+            <img src="images/Rectangle 25.jpg" alt="Frizer tunde parul" />
+          </li>
+          <li>
+            <img src="images/Rectangle 26.jpg" alt="Frizer pregatind barba" />
+          </li>
+          <li>
+            <img src="images/Rectangle 27.jpg" alt="Frizer stegre barba" />
+          </li>
+          <li>
+            <img
+              src="images/Rectangle 28.jpg"
+              alt="Frizer realizeaza conturul"
+            />
+          </li>
         </ul>
       </section>
-      <section>
-        <h3>Contacts</h3>
-        <address>
-          Main Street, 7A <br />
-          Kyiv, 08132
-        </address>
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
-        <br />
-        <a href="Email:barbershop@email.com">barbershop@email.com</a>
-      </section>
-      <section>
-        <h3>working hours</h3>
-        <h4>Daily from 9:00 AM till 22:00 PM</h4>
-      </section>
+
+      <div class="container">
+        <div class="booking-and-contact-section">
+          <!--booking section-->
+          <section class="section booking-form">
+            <button class="button-transparent">Send</button>
+          </section>
+          <!--Contacts-->
+          <section id="contacts" class="section contact-section">
+            <h2>Contacts</h2>
+            <address class="contacts-address">
+              <span class="contact-address-item">
+                <img
+                  width="25px"
+                  height="25px"
+                  src="./images/Map Pin.svg"
+                  alt=""
+                />Main street, 7A Kyiv, 08132
+              </span>
+              <a class="contact-address-item link" href="tel:+38044111111"
+                ><img
+                  width="25px"
+                  height="25px"
+                  src="./images/Grunge Phone.svg"
+                  alt=""
+                />+38044111111</a
+              >
+              <a
+                class="contact-address-item link"
+                href="mailto:barbershop@email.com"
+                ><img
+                  width="15px"
+                  height="15px"
+                  src="./images/email-icon.svg"
+                  alt=""
+                />barbershop@email.com</a
+              >
+            </address>
+            <div class="workin-hours">
+              <h3 class="sub-heading-with-dash">Working hours</h3>
+              <p>
+                Daily form <time datetime="9:00am">9:00AM</time> till
+                <time datetime="9:00am">22:00PM</time>
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
+    <!--Footer-->
+    <footer>
+      <div class="container">
+        <span>&#169; Copyright 2022</span>
+        <ul>
+          <li>
+            <a
+              href="https://instagram.com"
+              class="link"
+              target="_blank"
+              rel="nofollow no-referrer noopener"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https.//youtube.com"
+              class="link"
+              target="_blank"
+              rel="noopener no-referrer nofollow"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

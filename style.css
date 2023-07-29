@@ -203,3 +203,11 @@ img.dash {
   display: flex;
   margin-top: 46px;
 }
+
+.contact-section {
+  background: url("./images/contact-section-bg.png") #191c26;
+}
+
+.prices-section {
+  background: url("./images/services-section-bg.png") #191c26;
+}
