@@ -1,10 +1,28 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap);
+
 :root {
   --link-color: #ffffff;
+  --text-active: #ff6c00;
+  --link-hover-color: #ff6c00;
   --link-active-color: #ff6c00;
-  --heading-color: #ffffff;
+  --link-social-color: #303030;
+  --link-social--hover-color: #ff6c00;
   --text-font-family: "open sans", "sans-serif";
   --heading-font-family: "raleway", "sans-serif";
+  --text-color: #9da4bd;
+  --text-alternate-color: #303030;
+  --subheading-color: #9da3bd;
+  --heading-color: #ffffff;
   --section-background-color: #fff;
+  --heading-alternate-color: #303030;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--text-font-family);
 }
 
 h1,
