@@ -349,7 +349,46 @@ a.social-link:focus {
   letter-spacing: 0.02em;
   color: var(--text-active);
 }
+.prices-section .button {
+  margin-top: 50px;
+}
+.prices {
+  margin-top: 46px;
+  display: flex;
+}
+.prices-list {
+  flex: 1 0 auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  padding: 30px 40px;
+}
+.prices-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.prices-list li span {
+  flex: 0 1 content;
+}
+.prices-list li .prices-dash {
+  flex: 1 0 auto;
+  height: 1px;
+  background: #9da3bd1f;
+}
+.prices-list li > span + span {
+  margin-left: 6px;
+}
 
+/* Motto*/
+.motto-cards {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
 .header-container-content .hero-section {
   padding: 50px;
   width: 100%;
