@@ -123,6 +123,7 @@ img.dash {
   display: flex;
   padding-inline-start: 0;
 }
+
 .global-header .main-navigation ul li + li {
   margin-left: 40px;
 }
@@ -139,6 +140,7 @@ img.dash {
 .global-header a.active {
   color: var(--link-active-color);
 }
+
 .global-header a:hover,
 .global-header a:focus {
   color: var(--link-hover-color);
@@ -155,6 +157,7 @@ a.social-link:hover,
 a.social-link:focus {
   color: var(--link-social--hover-color);
 }
+
 /*someline is still missing*/
 
 /* Section generic */
@@ -173,9 +176,11 @@ a.social-link:focus {
   letter-spacing: 0.05em;
   color: #ffffff;
 }
+
 .section-heading + * {
   margin-top: 20px;
 }
+
 .section address {
   font-weight: 400;
   font-size: 18px;
@@ -183,22 +188,27 @@ a.social-link:focus {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+
 .section address a {
   color: var(--text-color);
 }
+
 .section address a:hover,
 .section address a:focus {
   color: var(--link-color);
 }
+
 .section .section-sub-heading {
   font-size: 11px;
   line-height: 14.98px;
   color: var(--subheading-color);
 }
+
 .section h1,
 .section h2 {
   color: var(--heading-color);
 }
+
 .section--light {
   background-color: #ffffff;
   color: #555555;
@@ -218,10 +228,12 @@ a.social-link:focus {
   display: flex;
   align-items: center;
 }
+
 .heading-with-dash h3 {
   margin-left: 20px;
   text-transform: uppercase;
 }
+
 .hero-heading {
   font-family: var(--heading-font-family);
   font-style: normal;
@@ -238,12 +250,14 @@ a.social-link:focus {
   display: flex;
   justify-content: flex-end;
 }
+
 .small-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   letter-spacing: 0.02em;
 }
+
 .section-description > * + * {
   margin-top: 20px;
 }
@@ -251,24 +265,31 @@ a.social-link:focus {
 .section-with-gray-bg {
   background: #f7f7f7;
 }
+
 .section-with-two-columns {
   display: flex;
 }
+
 .section-with-two-columns > * :nth-child(2) {
   margin-left: 64px;
 }
+
 .section-with-two-columns > * {
   flex: 0 1 50%;
 }
+
 .section-image {
   display: flex;
 }
+
 .section-image img + img {
   margin-left: 30px;
 }
+
 .about-section .button {
   margin-top: 40px;
 }
+
 .subheading-with-dash::before {
   content: "";
   display: inline-block;
@@ -278,6 +299,7 @@ a.social-link:focus {
   margin-right: 20px;
   vertical-align: middle;
 }
+
 .subheading-with-dash {
   font-family: var(--text-font-family);
   font-style: normal;
@@ -291,18 +313,22 @@ a.social-link:focus {
 }
 
 /* Why us */
+
 .why-us-list {
   display: flex;
   flex-wrap: wrap;
 }
+
 .why-us-list .feature {
   width: 170px;
   text-align: center;
   margin: 30px;
 }
+
 .why-us-list .feature:nth-child(2n) {
   margin-top: 75px;
 }
+
 .why-us-list .feature-title {
   font-family: var(--text-font-family);
   font-weight: 700;
@@ -310,6 +336,7 @@ a.social-link:focus {
   line-height: 57px;
   letter-spacing: 0.05em;
 }
+
 .why-us-list .feature-title sup {
   color: var(--text-active);
   font-family: var(--text-font-family);
@@ -319,6 +346,7 @@ a.social-link:focus {
   line-height: 22px;
   top: -24px;
 }
+
 .why-us-list .feature-description {
   width: 122px;
   font-family: var(--text-font-family);
@@ -328,10 +356,13 @@ a.social-link:focus {
   line-height: 15px;
   text-align: center;
 }
+
 /* list */
+
 .barbers-list {
   display: flex;
 }
+
 .barbers-list li {
   font-weight: 400;
   font-size: 18px;
@@ -339,9 +370,11 @@ a.social-link:focus {
   text-align: center;
   letter-spacing: 0.02em;
 }
+
 .barbers-list li + li {
   margin-left: 30px;
 }
+
 .barbers-list li em {
   font-size: 14px;
   line-height: 19px;
@@ -349,13 +382,16 @@ a.social-link:focus {
   letter-spacing: 0.02em;
   color: var(--text-active);
 }
+
 .prices-section .button {
   margin-top: 50px;
 }
+
 .prices {
   margin-top: 46px;
   display: flex;
 }
+
 .prices-list {
   flex: 1 0 auto;
   font-weight: 400;
@@ -365,19 +401,23 @@ a.social-link:focus {
   color: var(--text-color);
   padding: 30px 40px;
 }
+
 .prices-list li {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
+
 .prices-list li span {
   flex: 0 1 content;
 }
+
 .prices-list li .prices-dash {
   flex: 1 0 auto;
   height: 1px;
   background: #9da3bd1f;
 }
+
 .prices-list li > span + span {
   margin-left: 6px;
 }
@@ -388,6 +428,10 @@ a.social-link:focus {
   display: flex;
   gap: 30px;
   justify-content: space-between;
+}
+/* Booking and contact section */
+.booking-and-contact-section {
+  display: flex;
 }
 .header-container-content .hero-section {
   padding: 50px;
