@@ -49,7 +49,7 @@ ul {
   line-height: normal;
   letter-spacing: 1.08px;
   text-transform: uppercase;
-  background-color: transparent;
+  background-color: black;
 }
 
 .global-aside {
@@ -278,11 +278,15 @@ a.social-link:focus {
   flex: 0 1 50%;
 }
 
-.section-image {
+.section-images {
   display: flex;
+  justify-content: space-around;
+}
+.section-description {
+  margin-left: 20px;
 }
 
-.section-image img + img {
+.section-images img + img {
   margin-left: 30px;
 }
 
@@ -446,7 +450,7 @@ a.social-link:focus {
   padding-left: 100px;
 }
 
-.button.transparent {
+.button-transparent {
   margin-top: 232px;
   outline: none;
   background: transparent;
@@ -463,6 +467,10 @@ a.social-link:focus {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.centered-content {
+  text-align: center;
 }
 
 .booking-form {
