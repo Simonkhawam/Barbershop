@@ -63,7 +63,7 @@
               <a class="phone-number" href="tel:+380441111111"
                 >+38 044 111 11 11</a
               >
-              <button class="button global-header-book-btn">
+              <button data-modal-open class="button book-a-service-btn">
                 BOOK A SERVICE
               </button>
             </div>
@@ -463,6 +463,14 @@
         </ul>
       </div>
     </footer>
+    <!--Modal-->
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button class="close-btn" data-modal-close>&times;</button>
+        continutul modalului
+      </div>
+    </div>
+
     <script>
       feather.replace();
     </script>

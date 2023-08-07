@@ -113,8 +113,18 @@ img.dash {
   padding: 0;
 }
 
-.global-header-book-btn {
+.book-a-service-btn {
+  background-color: transparent;
+  border-radius: 25px;
+  border: 1px solid var(--link-active-color);
+  cursor: pointer;
+  outline: none;
+  padding: 12px 25px;
   margin-left: 40px;
+}
+.book-a-service-btn:hover,
+.book-a-service-btn:focus {
+  background-color: #ff6c00;
 }
 
 .global-header .main-navigation {
@@ -549,4 +559,39 @@ a.social-link:focus {
 .icons-list .icon:hover,
 .icons-list .icon:focus {
   color: var(--social-icon-hover-color);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  padding: 16px;
+  background-color: var(--heading-color);
+  width: 50%;
+  margin: 0 auto;
+  height: 500px;
+  position: relative;
+}
+.is-hidden {
+  visibility: hidden;
+}
+.close-btn {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+.close-btn:hover .close-btn:focus {
+  background-color: red;
 }
