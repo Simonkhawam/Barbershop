@@ -48,7 +48,9 @@
         <header class="global-header">
           <nav class="main-navigation">
             <ul>
-              <li><a href="#about.html" class="active">About</a></li>
+              <li>
+                <a href="#about.html" class="active">About</a>
+              </li>
               <li>
                 <a href="#services.html">Services and prices</a>
               </li>
@@ -123,7 +125,9 @@
                   are always ready to improve everyone who comes to us!
                 </p>
               </div>
-              <button class="button">ONLINE-BOOKING</button>
+              <button class="button book-a-service-btn-light">
+                ONLINE-BOOKING
+              </button>
             </div>
           </div>
         </div>
@@ -180,7 +184,7 @@
             </ul>
           </div>
           <div class="centered-content">
-            <button class="button">Book a service</button>
+            <button class="button book-a-service-btn">Book a service</button>
           </div>
         </div>
       </section>
@@ -247,6 +251,7 @@
           <ul class="barbers-list">
             <li>
               <img src="images/img1.jpg" alt="John smith" />
+
               <span>John Smith</span>
               <em>Extreme Barber</em>
               <div class="icons-list">
@@ -384,8 +389,11 @@
           <h3>In Latin, "barba" means "beard"</h3>
         </div>
         <ul class="motto-cards">
-          <li>
+          <li class="motto-cards-elements">
             <img src="images/Rectangle 25.jpg" alt="Frizer tunde parul" />
+            <div class="overlay-text-img">
+              <h2>text peste imagina</h2>
+            </div>
           </li>
           <li>
             <img src="images/Rectangle 26.jpg" alt="Frizer pregatind barba" />
@@ -407,6 +415,39 @@
           <!--booking section-->
           <section class="section booking-form">
             <h3 class="booking-of-service">Book a Service</h3>
+            <form action="">
+              <div class="form-row">
+                <label for="" class="form-group">
+                  <input
+                    type="text"
+                    name="username"
+                    placeholder="Name*"
+                    class="input"
+                    required
+                  />
+                  <!-- <span class="label-text">Name</span> -->
+                </label>
+                <label for="" class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Telefone*"
+                    class="input"
+                    required
+                    name="Telephone"
+                  />
+                  <!-- <span class="label-text">Telephone</span> -->
+                </label>
+              </div>
+              <label class="form-group">
+                <textarea
+                  name="Massage"
+                  rows="3"
+                  placeholder="Massage"
+                  class="input"
+                ></textarea>
+                <!-- <span class="label-text">Massage</span> -->
+              </label>
+            </form>
             <button class="button-transparent">Send</button>
           </section>
           <!--Contacts-->
@@ -429,7 +470,8 @@
             <div class="workin-hours">
               <h3 class="subheading-with-dash">Working hours</h3>
               <p>
-                Daily form <time datetime="9:00am">9:00AM</time> till
+                Daily form
+                <time datetime="9:00am">9:00AM</time> till
                 <time datetime="9:00am">22:00PM</time>
               </p>
             </div>
