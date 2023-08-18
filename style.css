@@ -60,23 +60,7 @@ ul {
 }
 
 .global-aside {
-  background: white;
-  display: flex;
-  flex-direction: column;
-  flex: 0 1 155px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 55px;
-}
-
-.global-aside-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.global-aside-links > * {
-  margin-top: 40px;
+  display: none;
 }
 
 .header-container {
@@ -106,9 +90,10 @@ img.dash {
 }
 
 .global-header .main-navigation ul {
-  display: flex;
+  /* display: flex;
   width: 450px;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
+  display: none;
 }
 
 .section.global-header-content {
@@ -686,4 +671,39 @@ form .form-group {
   background-color: grey;
   position: absolute;
   bottom: 0;
+}
+/* tablet design*/
+@media screen and (min-width: 768px) {
+  .global-aside {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 155px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px;
+  }
+
+  .global-aside-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .global-aside-links > * {
+    margin-top: 40px;
+  }
+}
+/* desktop design*/
+@media screen and (min-width: 1280) {
+  .global-header .main-navigation ul {
+    display: flex;
+    width: 450px;
+    justify-content: space-evenly;
+  }
+}
+.mobile-logo-img {
+  position: absolute;
+  top: 40px;
+  left: 31px;
 }
