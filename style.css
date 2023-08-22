@@ -75,6 +75,26 @@ ul {
   padding: 40px 55px 40px 100px;
 }
 
+.header-container-content .menu-btn {
+  color: white;
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 48px;
+  right: 31px;
+  cursor: pointer;
+}
+.header-container-content .mobile-logo {
+  position: absolute;
+  top: 40px;
+  left: 31px;
+}
+
+.mobile-logo-img {
+  position: absolute;
+  top: 40px;
+  left: 31px;
+}
 img.dash {
   width: 60px;
   height: 1px;
@@ -90,10 +110,9 @@ img.dash {
 }
 
 .global-header .main-navigation ul {
-  /* display: flex;
+  display: flex;
   width: 450px;
-  justify-content: space-evenly; */
-  display: none;
+  justify-content: space-evenly;
 }
 
 .section.global-header-content {
@@ -134,8 +153,7 @@ img.dash {
   color: white;
 }
 .global-header .main-navigation {
-  display: flex;
-  justify-content: space-between;
+  display: none;
 }
 
 .global-header .main-navigation ul {
@@ -693,17 +711,32 @@ form .form-group {
   .global-aside-links > * {
     margin-top: 40px;
   }
-}
-/* desktop design*/
-@media screen and (min-width: 1280) {
-  .global-header .main-navigation ul {
-    display: flex;
-    width: 450px;
-    justify-content: space-evenly;
+  .header-container-content .mobile-logo {
+    display: none;
   }
 }
-.mobile-logo-img {
-  position: absolute;
-  top: 40px;
-  left: 31px;
+/* desktop design*/
+@media screen and (min-width: 1280px) {
+  .global-header .main-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-container-content .menu-btn {
+    display: none;
+  }
 }
+
+/* @media screen and (min-width: 480px) {
+  .element {
+   
+}
+@media screen and (min-width: 768px) {
+  .element {
+    
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .element {
+   
+} */
